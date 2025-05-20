@@ -101,9 +101,13 @@ while True:
 
             font = pygame.font.Font(None, 45)
             font2 = pygame.font.Font(None, 30)
+            font3 = pygame.font.Font(None, 30)
+
+            text = font3.render("Bu program Kuzey Tuna Kale tarafından yapıldı", True, (255, 255, 0))
+            screen.blit(text, text.get_rect(center=(300, 30)))
 
             text = font.render(f"Bu atık %{possibility:.2f} ihtimalle bir {conculusion}", True, (255, 255, 255))
-            screen.blit(text, text.get_rect(center=(300, 100)))
+            screen.blit(text, text.get_rect(center=(300, 150)))
             
             text = font2.render("İhtimaller:", True, (255, 255, 255))
             screen.blit(text, text.get_rect(center=(300, 200)))
